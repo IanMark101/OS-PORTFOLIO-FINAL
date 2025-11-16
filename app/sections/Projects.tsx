@@ -34,7 +34,7 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="py-24 lg:py-36 border-t border-zinc-800 scroll-mt-16">
       <h2 className="text-4xl font-extrabold text-cyan-400 mb-12 text-center relative after:block after:w-16 after:h-1 after:bg-cyan-500 after:mx-auto after:mt-2 after:rounded-full">FEATURED PROJECTS</h2>
-      <p className="text-lg text-zinc-400 mb-12 text-center">A selection of my work demonstrating development skills and technical depth.</p>
+      <p className="text-lg text-zinc-400 mb-12 text-center">My Small Projects That I Made So Far</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {projectsData.map((p) => (
           <ProjectCard key={p.name} project={p} />
