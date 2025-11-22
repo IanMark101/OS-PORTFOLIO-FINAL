@@ -7,8 +7,7 @@ import {
   Palette,
   GitBranch,
   Hexagon,
-  Zap, // Keeping original Zap icon as requested
-  Download, // For the CV button
+  Zap, // Keeping original Zap icon
 } from "lucide-react";
 
 // Keeping your original skillMeta structure
@@ -31,36 +30,26 @@ export default function AboutSection() {
           ABOUT ME
         </h2>
         
-        {/* Main card container - now with glows and relative positioning for them */}
+        {/* Main card container - with glows and relative positioning */}
         <div className="bg-zinc-800 p-8 rounded-3xl shadow-3xl shadow-zinc-950 space-y-8 border border-zinc-700 relative overflow-hidden">
           
           {/* Dual-color animated glows - Consistent with Home Section */}
           <div className="absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4 w-96 h-96 bg-cyan-600 opacity-10 rounded-full blur-3xl animate-pulse pointer-events-none" />
           <div className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4 w-80 h-80 bg-purple-600 opacity-10 rounded-full blur-3xl animate-pulse pointer-events-none" />
 
-          {/* All content within the card, now relatively positioned above the glows */}
+          {/* All content within the card, relatively positioned above the glows */}
           <div className="relative z-10"> 
-            <p className="text-lg text-zinc-300 leading-relaxed">
-              I am <span className="font-bold text-white">Ian Mark Buenaflor</span>, a highly motivated 3rd Year Information Technology student. My passion lies in bridging the gap between theoretical computing and practical development, focusing primarily on creating efficient and modern web applications. I actively participate in hackathons and maintain several personal coding projects to expand my skillset.
+            <p className="text-lg text-zinc-300 leading-relaxed mb-6">
+              I am <span className="font-bold text-white">Ian Mark Buenaflor</span>, a driven 3rd Year Information Technology student dedicated to engineering accessible, pixel-perfect web experiences. My journey bridges the gap between theoretical computer science and practical application, with a sharp focus on the React ecosystem and modern full-stack architecture.
             </p>
             <p className="text-lg text-zinc-300 leading-relaxed">
-              Outside of coding, I enjoy competitive online gaming and exploring new documentation, which helps me stay sharp and up-to-date with emerging tech trends. My goal is to secure an entry-level developer role where I can contribute to meaningful software solutions.
+              Beyond the IDE, I thrive in the fast-paced environment of hackathons and competitive gaming, both of which sharpen my strategic thinking and collaborative skills. I am currently seeking an entry-level developer role where I can leverage my technical skillset to contribute to meaningful, scalable software solutions.
             </p>
 
-            {/* Added a Download CV button for functionality */}
-            <a
-              href="/IanMarkBuenaflor_CV.pdf" // <-- TODO: Replace with your actual CV file path
-              download
-              className="mt-8 inline-flex items-center gap-2 px-6 py-3 text-cyan-400 font-bold border-2 border-cyan-400 rounded-lg shadow-lg hover:bg-cyan-500 hover:text-zinc-900 transition duration-300 hover:shadow-cyan-500/50"
-            >
-              <Download className="w-5 h-5" />
-              <span>DOWNLOAD CV</span>
-            </a>
-
-            <h3 className="text-2xl font-semibold text-white pt-6 mt-8 border-t border-zinc-700"> {/* Added mt-8 for spacing */}
+            <h3 className="text-2xl font-semibold text-white pt-6 mt-8 border-t border-zinc-700"> 
               EXPERTISE & STACK
             </h3>
-            <div className="flex flex-wrap gap-4 mt-4"> {/* Added mt-4 for spacing */}
+            <div className="flex flex-wrap gap-4 mt-4"> 
               {skillMeta.map(([name, Icon, bg, border]) => (
                 <span
                   key={name}

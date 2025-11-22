@@ -70,7 +70,7 @@ export default function HomeSection() {
           {/* Avatar Image */}
           <div className="order-1 lg:order-2 flex-shrink-0">
             <img
-              src="https://placehold.co/200x200/27272a/ffffff?text=Professional+Avatar"
+              src="./homepageprofile.jpg"
               alt="Your Professional Avatar"
               className="w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover border-4 border-cyan-500 shadow-2xl shadow-cyan-950/80"
               onError={(e) => {
