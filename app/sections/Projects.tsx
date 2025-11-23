@@ -7,33 +7,33 @@ const projectsData: Project[] = [
   {
     name: "APPSDEV FIRST SIMPLE RESUME",
     description:
-      "A responsive mock e-commerce frontend demonstrating strong UI/UX principles and component-based architecture.",
+      "Simple Resume Using React",
     techStack: ["React", "TypeScript", "Tailwind CSS"],
     githubUrl: "https://github.com/IanMark101/BUENAFLOR-APPSDEV",
     vercelUrl: "https://buenaflor-appsdev.vercel.app/",
     placeholderImage:
-      "https://placehold.co/400x250/27272a/ffffff?text=E-Commerce+Mockup",
+      "./images/projects/resume.jpg",
+  },
+  {
+    name: "ROUND ROBIN CPU SCHEDULING",
+    description:
+      "Calculating Round Robin CPU SCHEDULING",
+    techStack: ["React", "Firebase", "WebSockets"],
+    githubUrl: "https://github.com/IanMark101/OS-CPU-SCHED-PROJ/tree/main",
+    vercelUrl: "https://os-cpu-sched-proj.vercel.app/",
+    placeholderImage:
+      "/images/projects/roundrobin.jpg",
   },
   {
     name: "APPSDEV E-COMMERCE SIMPLE WEBSITE",
     description:
-      "A command-line interface application for managing daily tasks and schedules efficiently.",
+      "Simple e-commerce type website",
     techStack: ["Node.js", "TypeScript", "CLI"],
     githubUrl: "https://github.com/IanMark101/ECOMMERCE-MIDTERM",
     vercelUrl:
       "https://ecommerce-midterm-5pmk-eqokm84np-ian-marks-projects-b1eb3da2.vercel.app/",
     placeholderImage:
-      "https://placehold.co/400x250/3f3f46/ffffff?text=Task+Manager+Tool",
-  },
-  {
-    name: "ROOM BOOKING ANALYTICS",
-    description:
-      "A simple web-based chat application demonstrating real-time data handling using Firebase or WebSockets.",
-    techStack: ["React", "Firebase", "WebSockets"],
-    githubUrl: "https://github.com/yourusername/realtime-chat",
-    vercelUrl: "https://it-track-defense-proj.vercel.app/",
-    placeholderImage:
-      "https://placehold.co/400x250/27272a/ffffff?text=Room+Booking",
+      "/images/projects/shop.jpg",
   },
 ];
 

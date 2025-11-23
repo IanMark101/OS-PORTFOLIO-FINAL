@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Github, Facebook, ArrowRight } from "lucide-react";
+import { Github, Facebook, ArrowRight, Download } from "lucide-react";
 
 export default function HomeSection() {
   const scrollToProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -52,15 +52,28 @@ export default function HomeSection() {
               </a>
             </div>
 
-            {/* CTA Button with icon */}
-            <a
-              href="#projects"
-              onClick={scrollToProjects}
-              className="mt-10 inline-flex items-center justify-center space-x-2 px-8 py-3 text-sm tracking-widest border-2 border-cyan-400 text-cyan-400 font-bold rounded-lg shadow-lg hover:bg-cyan-500 hover:text-zinc-900 transition duration-300 hover:shadow-cyan-500/50"
-            >
-              <span>VIEW PROJECTS</span>
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            {/* Buttons Container */}
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              {/* View Projects Button */}
+              <a
+                href="#projects"
+                onClick={scrollToProjects}
+                className="inline-flex items-center justify-center space-x-2 px-8 py-3 text-sm tracking-widest border-2 border-cyan-400 text-cyan-400 font-bold rounded-lg shadow-lg hover:bg-cyan-500 hover:text-zinc-900 transition duration-300 hover:shadow-cyan-500/50"
+              >
+                <span>VIEW PROJECTS</span>
+                <ArrowRight className="w-5 h-5" />
+              </a>
+
+              {/* Download Resume Button */}
+              <a
+                href="./resume.pdf" 
+                download="IanMark_Buenaflor_Resume.pdf"
+                className="inline-flex items-center justify-center space-x-2 px-8 py-3 text-sm tracking-widest bg-zinc-700 text-white font-bold rounded-lg shadow-lg hover:bg-zinc-600 transition duration-300 border-2 border-transparent hover:border-zinc-500"
+              >
+                <span>RESUME</span>
+                <Download className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
           {/* Avatar Image */}

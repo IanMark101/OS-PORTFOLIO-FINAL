@@ -4,7 +4,7 @@ import { Github, ExternalLink } from "lucide-react";
 import type { Project } from "../types";
 
 export default function ProjectCard({ project }: { project: Project }) {
-  // helper: decide if the vercelUrl is a real deployment (ignore placeholder URLs)
+  // Check if Vercel URL is real
   const isRealVercelUrl = (url: string) =>
     url && !url.includes("placehold.co") && url.startsWith("http");
 
@@ -14,24 +14,26 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   return (
     <div
-      onClick={() => vercelUrl && window.open(vercelUrl, "_blank", "noopener,noreferrer")}
+      onClick={() =>
+        vercelUrl && window.open(vercelUrl, "_blank", "noopener,noreferrer")
+      }
       className={`group bg-zinc-800 rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-[1.03] hover:shadow-cyan-700/50 border border-zinc-700 hover:border-cyan-500/80 ${
         vercelUrl ? "cursor-pointer" : ""
       }`}
     >
       {/* ---- IMAGE ---- */}
-      <div className="relative h-48 bg-zinc-700 overflow-hidden">
+      <div className="relative w-full overflow-hidden">
         <img
           src={project.placeholderImage}
           alt={`Preview of ${project.name}`}
-          className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-80"
+          className="w-full h-auto object-contain transition-opacity duration-300 group-hover:opacity-80"
           onError={(e) => {
             const t = e.currentTarget as HTMLImageElement;
             t.onerror = null;
-            t.src = "https://placehold.co/400x250/3f3f46/ffffff?text=Image+Missing";
+            t.src =
+              "https://placehold.co/400x250/3f3f46/ffffff?text=Image+Missing";
           }}
         />
-        {/* little indicator when card is clickable */}
         {vercelUrl && (
           <div className="absolute top-3 right-3 text-cyan-400 bg-zinc-900/70 rounded-full p-1.5">
             <ExternalLink className="w-4 h-4" />
@@ -57,7 +59,6 @@ export default function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
 
-        {/* ---- GITHUB BUTTON (stops propagation so card click is ignored) ---- */}
         <div className="mt-4" onClick={(e) => e.stopPropagation()}>
           <a
             href={project.githubUrl.trim()}
