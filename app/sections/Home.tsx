@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-// Import new icons, including Facebook
 import { Github, Facebook, ArrowRight } from "lucide-react";
 
 export default function HomeSection() {
@@ -20,12 +19,9 @@ export default function HomeSection() {
 
         <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-12 z-10 relative">
           
-          {/* Text Content */}
           <div className="flex-1 order-2 lg:order-1 text-center lg:text-left">
             <h1 className="text-4xl sm:text-7xl font-extrabold text-white mb-2 tracking-tighter leading-tight">IAN MARK</h1>
             <h1 className="text-4xl sm:text-7xl font-extrabold text-white mb-6 tracking-tighter leading-tight border-b-4 border-cyan-400/50 pb-2 inline-block">BUENAFLOR</h1>
-            
-            {/* Gradient on subtitle */}
             <h2 className="text-xl sm:text-3xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
               ASPIRING WEB DEVELOPER
             </h2>
@@ -34,10 +30,10 @@ export default function HomeSection() {
               Learning full-stack web development one project at a time
             </p>
 
-            {/* Social media links - LinkedIn changed to Facebook */}
+            {/* Social media links */}
             <div className="flex justify-center lg:justify-start space-x-6 mt-8">
               <a
-                href="https://github.com" // <-- ADD YOUR GITHUB LINK
+                href="https://github.com/IanMark101"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
@@ -46,13 +42,13 @@ export default function HomeSection() {
                 <Github className="w-8 h-8" />
               </a>
               <a
-                href="https://facebook.com" // <-- UPDATED: ADD YOUR FACEBOOK LINK
+                href="https://www.facebook.com/ianmarkbuenaflor7"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook Profile"
                 className="text-zinc-400 hover:text-cyan-400 transition-colors duration-300"
               >
-                <Facebook className="w-8 h-8" /> {/* UPDATED: Facebook Icon */}
+                <Facebook className="w-8 h-8" /> 
               </a>
             </div>
 
