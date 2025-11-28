@@ -16,14 +16,14 @@ const projectsData: Project[] = [
       "/images/projects/analytics.jpg",
   },
   {
-    name: "ROUND ROBIN CPU SCHEDULING",
+    name: "FIRST COME FIRST SERVE CPU SCHEDULING",
     description:
-      "Calculating Round Robin CPU SCHEDULING",
+      "Simple, non-preemptive queue; first process arriving is executed first. Convoy effect.",
     techStack: ["Nextjs"],
     githubUrl: "https://github.com/IanMark101/OS-CPU-SCHED-PROJ/tree/main",
     vercelUrl: "https://os-cpu-sched-proj.vercel.app/",
     placeholderImage:
-      "/images/projects/roundrobin.jpg",
+      "/images/projects/FCFS.jpg",
   },
   {
     name: "APPSDEV E-COMMERCE SIMPLE WEBSITE",
