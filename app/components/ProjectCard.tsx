@@ -26,7 +26,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <img
           src={project.placeholderImage}
           alt={`Preview of ${project.name}`}
-          className="w-full h-auto object-contain transition-opacity duration-300 group-hover:opacity-80"
+          className="w-full h-auto max-h-48 sm:max-h-64 lg:max-h-72 object-cover transition-opacity duration-300 group-hover:opacity-80"
           onError={(e) => {
             const t = e.currentTarget as HTMLImageElement;
             t.onerror = null;
