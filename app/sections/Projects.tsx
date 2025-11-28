@@ -4,21 +4,22 @@ import ProjectCard from "../components/ProjectCard";
 import type { Project } from "../types";
 
 const projectsData: Project[] = [
+
   {
-    name: "APPSDEV FIRST SIMPLE RESUME",
+    name: "BUSINES ANALYTICS FINAL PROJECT",
     description:
-      "Simple Resume Using React",
-    techStack: ["React", "TypeScript", "Tailwind CSS"],
-    githubUrl: "https://github.com/IanMark101/BUENAFLOR-APPSDEV",
-    vercelUrl: "https://buenaflor-appsdev.vercel.app/",
+      "Presenting Analytics using  graphs and methodologies",
+    techStack: ["Nextjs", "Neon", "PosgreSQL"],
+    githubUrl: "https://github.com/IanMark101/IT-TRACK-DEFENSE-PROJ",
+    vercelUrl: "https://it-track-defense-proj.vercel.app/",
     placeholderImage:
-      "./images/projects/resume.jpg",
+      "/images/projects/analytics.jpg",
   },
   {
     name: "ROUND ROBIN CPU SCHEDULING",
     description:
       "Calculating Round Robin CPU SCHEDULING",
-    techStack: ["React", "Firebase", "WebSockets"],
+    techStack: ["Nextjs"],
     githubUrl: "https://github.com/IanMark101/OS-CPU-SCHED-PROJ/tree/main",
     vercelUrl: "https://os-cpu-sched-proj.vercel.app/",
     placeholderImage:
@@ -35,6 +36,16 @@ const projectsData: Project[] = [
     placeholderImage:
       "/images/projects/shop.jpg",
   },
+  {
+    name: "APPSDEV FIRST SIMPLE RESUME",
+    description:
+      "Simple Resume Using React",
+    techStack: ["React", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/IanMark101/BUENAFLOR-APPSDEV",
+    vercelUrl: "https://buenaflor-appsdev.vercel.app/",
+    placeholderImage:
+      "./images/projects/resume.jpg",
+  }
 ];
 
 export default function ProjectsSection() {
