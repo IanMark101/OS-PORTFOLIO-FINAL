@@ -66,7 +66,7 @@ export default function HomeSection() {
 
               {/* Download Resume Button */}
               <a
-                href="./resume.pdf"
+                href="./os-resume.pdf"
                 download="IanMark_Buenaflor_Resume.pdf"
                 className="inline-flex items-center justify-center space-x-2 px-8 py-3 text-sm tracking-widest bg-zinc-700 text-white font-bold rounded-lg shadow-lg hover:bg-zinc-600 transition duration-300 border-2 border-transparent hover:border-zinc-500"
               >
