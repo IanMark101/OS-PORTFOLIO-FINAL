@@ -27,7 +27,7 @@ export default function HomeSection() {
             </h2>
 
             <p className="text-lg text-zinc-400 max-w-md mx-auto lg:mx-0">
-              Learning full-stack web development one project at a time
+              Aspiring full-stack web developmer with a passion for creating dynamic and user-friendly web applications, Eager to contribute to innovative projects and continuously enhance my development skills.
             </p>
 
             {/* Social media links */}
